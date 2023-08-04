@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Add required metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the HTML document for assignment two">
+        <title>Pug's Pizza Paradise</title>
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Add fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+
+        <!-- Add Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <!-- Add my CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- Add navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./img/pizza-logo.png" class="rounded-logo" alt="header logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutus" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu-section" class="nav-link">Menu</a>
+                        </li>
+                        <!-- create our dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Order</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="order.html" class="dropdown-item">Order on Web</a></li>
+                                <li><a type="button" onclick="submitOrder()" class="dropdown-item">Order over the Phone</a></li>
+                            </ul>
+                        </li> 
+                        <i class="bi bi-person-circle large-icon"></i>
+                        <li class="nav-item dropdown">
+                            <a class="myaccount nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">My Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a type="button" onclick="submitOrder()" class="dropdown-item">Log in</a></li>
+                                <li><a type="button" onclick="submitOrder()" class="dropdown-item">Sign up</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="background">
+                <!--This section is for making background-->
+            </section>
+
+            <!--About us Section-->
+            <section class="aboutus" id="aboutus">
+                <h1>About Us</h1>
+                <div class="explanation">
+                    <p id="exp">Welcome to our pizza website! We are a passionate team of pizza enthusiasts dedicated to serving delicious pies that have been loved by our local community for years. Our philosophy is simple - using the highest quality ingredients to provide our customers with heartwarming food experiences.<br><br>
+                        Our pizzas are crafted with fresh ingredients and unique recipes, baked using traditional methods. We take utmost care in ensuring food safety, so you can enjoy our pizzas with complete peace of mind.<br><br>
+                        Our team is committed to prioritizing customer satisfaction, always ready to greet you with a smile. Our menu is designed to cater to all, from kids to adults, ensuring everyone has a great time. Moreover, we offer customizable options to meet various preferences.<br><br>
+                        Contributing to our local community is close to our hearts. We participate in charitable events and community gatherings to spread smiles and happiness to as many people as possible.<br><br>
+                        We take pride in delivering delicious pizzas and heartfelt service, always striving to improve each day. It is our utmost wish to provide you with a special and memorable experience. Thank you for choosing us.<br><br>  
+                        With sincere gratitude,<br><br>
+                        The Pug's Pizza Paradise Team
+                    </p>
+                </div>
+            </section>
+
+            <!--This section is Menu-->
+            <section class="menu-section" id="menu-section">
+                <h2>Menu</h2>
+                <div class="row">
+                    <div class="menu col-sm-12 col-md-6 col-lg-4">
+                        <p class="menu-name">Pepperoni Pizza</p>
+                        <img src="./img/pepperoni.jpeg" class="menu-pic col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                    <div class="menu col-sm-12 col-md-6 col-lg-4">
+                        <p class="menu-name">BBQ Chicken Pizza</p>
+                        <img src="./img/bbq.jpeg" class="menu-pic col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                    <div class="menu col-sm-12 col-md-6 col-lg-4">
+                        <p class="menu-name">Hawaiian Pizza</p>
+                        <img src="./img/hawai.jpg" class="menu-pic col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                    <div class="menu col-sm-12 col-md-6 col-lg-4">
+                        <p class="menu-name">Teriyaki Pizza</p>
+                        <img src="./img/teriyaki.avif" class="menu-pic col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                    <div class="menu col-sm-12 col-md-6 col-lg-4">
+                        <p class="menu-name">Cheese Pizza</p>
+                        <img src="./img/cheese.jpg" class="menu-pic col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                    <div class="menu col-sm-12 col-md-6 col-lg-4">
+                        <p class="menu-name">Vegitable Pizza</p>
+                        <img src="./img/vege.jpg" class="menu-pic col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                </div>
+                <div class="Order-button">
+                    <!--Add button jumping to order page-->
+                    <button class="button-pizza" type="button"><a href="order.html">Order</a></button>
+                </div>                
+            </section>
+
+            <!--Add footer-->
+            <footer>
+                <p class="footer-word">© 2023 Student#200538257</p>
+            </footer>
+        </main>
+
+        <script>
+            // JavaScript function to showing message for some button
+            function submitOrder() {
+                alert('Sorry, out of servise!');
+            }
+        </script>
+    </body>
+</html>

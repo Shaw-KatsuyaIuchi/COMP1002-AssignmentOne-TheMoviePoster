@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Add required metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the 2nd HTML document for assignment two">
+        <title>Pug's Pizza Paradise</title>
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Add fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+        
+        <!-- Add the order CSS -->
+        <link rel="stylesheet" href="./css/order.css">
+    </head>
+    <body>
+        <h1>Place Your Pizza Order</h1>
+
+        <!-- Pizza Type Section -->
+        <section class="main">
+            <h2>1. Choose Your Pizza</h2>
+        <form>
+            <label>
+                <input type="checkbox" name="pizzaType" value="Pepperoni Pizza">Pepperoni Pizza
+            </label><br>
+            <label>
+                <input type="checkbox" name="pizzaType" value="BBQ Chicken Pizza">BBQ Chicken Pizza
+            </label><br>
+            <label>
+                <input type="checkbox" name="pizzaType" value="Hawaiian Pizza">Hawaiian Pizza
+            </label><br>
+            <label>
+                <input type="checkbox" name="pizzaType" value="Teriyaki Pizza">Teriyaki Pizza
+            </label><br>
+            <label>
+                <input type="checkbox" name="pizzaType" value="Cheese Pizza">Cheese Pizza
+            </label><br>
+            <label>
+                <input type="checkbox" name="pizzaType" value="Vegitable Pizza">Vegitable Pizza
+            </label><br>
+        </form>
+
+        <!-- Pizza Size Section -->
+        <h2>2. Choose Pizza Size</h2>
+        <form>
+            <label>
+                <input type="radio" name="pizzaSize" value="small" checked>Small
+            </label><br>
+            <label>
+                <input type="radio" name="pizzaSize" value="medium">Medium (+3CAD)
+            </label><br>
+            <label>
+                <input type="radio" name="pizzaSize" value="large">Large (+6CAD)
+            </label><br>
+        </form>
+
+        <!-- Toppings Section -->
+        <h2>3. Add Toppings</h2>
+        <form>
+            <label>
+                <input type="checkbox" name="topping" value="mushrooms">Mushrooms
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="peppers">Peppers
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="onions">Onions
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="Green Pepper">Green Pepper
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="Chicken Meat">Chicken Meat
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="EX. Cheese">Extra Cheese
+            </label><br>
+        </form>
+
+        <!-- Order Details Section -->
+        <h2>4. Enter Your Details</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="pickupOrDelivery">Pick up or Delivery:</label>
+            <select id="pickupOrDelivery" name="pickupOrDelivery" required>
+                <option value="pickup">Pick up</option>
+                <option value="delivery">Delivery</option>
+            </select><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        </form>
+
+        <!-- Order Button -->
+        <button type="button" onclick="submitOrder()">Place Order</button>
+        </section>
+
+        <script>
+            // JavaScript function to handle the order submission
+            function submitOrder() {
+                alert('Thank you for placing your order!');
+            }
+        </script>
+    </body>
+</html>
